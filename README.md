@@ -1,6 +1,6 @@
 # 🔍 OmniSearch AI
 
-> **An accessible, AI-powered search engine prototype** — built with a focus on WCAG 2.2 AA compliance, inclusive design, and modern web aesthetics.
+> **An accessible, AI-powered search engine prototype** - built with a focus on WCAG 2.2 AA compliance, inclusive design, and modern web aesthetics.
 
 ![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=next.js)
 ![React](https://img.shields.io/badge/React-19-blue?logo=react)
@@ -11,7 +11,7 @@
 
 ## ✨ Overview
 
-OmniSearch AI is a search engine prototype that puts **accessibility first**. Every element — from the search bar to the results page — is designed to be usable by everyone, including users with visual, motor, cognitive, and auditory disabilities.
+OmniSearch AI is a search engine prototype that puts **accessibility first**. Every element - from the search bar to the results page - is designed to be usable by everyone, including users with visual, motor, cognitive, and auditory disabilities.
 
 The standout feature is **AI Access View**: a tool that transforms complex web pages into clean, readable formats with adjustable text, dyslexia-friendly fonts, and simplified layouts.
 
@@ -25,17 +25,17 @@ The standout feature is **AI Access View**: a tool that transforms complex web p
 - Responsive layout across all device sizes
 
 ### ♿ AI Access View
-- **Simplified Reading Mode** — strips away clutter for a distraction-free experience
-- **Dyslexia-Friendly Font** — toggle OpenDyslexic for improved readability
-- **Adjustable Text Size** — scale text up or down to your preference
-- **High-Contrast Controls** — clear, large interactive elements
+- **Simplified Reading Mode** - strips away clutter for a distraction-free experience
+- **Dyslexia-Friendly Font** - toggle OpenDyslexic for improved readability
+- **Adjustable Text Size** - scale text up or down to your preference
+- **High-Contrast Controls** - clear, large interactive elements
 
 ### 🛡️ Accessibility Panel
-- **Theme Switcher** — light, dark, and high-contrast modes
-- **Skip Navigation Links** — keyboard users can jump straight to content
-- **Screen Reader Optimised** — semantic HTML, ARIA labels, and live regions throughout
-- **Reduced Motion** — respects `prefers-reduced-motion` system settings
-- **Focus Management** — visible focus rings and logical tab order
+- **Theme Switcher** - light, dark, and high-contrast modes
+- **Skip Navigation Links** - keyboard users can jump straight to content
+- **Screen Reader Optimised** - semantic HTML, ARIA labels, and live regions throughout
+- **Reduced Motion** - respects `prefers-reduced-motion` system settings
+- **Focus Management** - visible focus rings and logical tab order
 
 ### 🎨 Modern Design
 - Aurora-inspired animated background

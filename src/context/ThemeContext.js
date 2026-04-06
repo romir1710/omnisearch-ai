@@ -1,7 +1,7 @@
 "use client";
 
 /**
- * ThemeContext.js — Accessibility Preferences Provider
+ * ThemeContext.js - Accessibility Preferences Provider
  *
  * WHY THIS EXISTS:
  * WCAG 2.2 requires that users can customize their experience based on their
@@ -55,7 +55,7 @@ export function ThemeProvider({ children }) {
   const [dyslexiaFont, setDyslexiaFont] = useState(false);
 
   /**
-   * Apply a preset mode — updates all individual toggles at once.
+   * Apply a preset mode - updates all individual toggles at once.
    * WHY: Preset modes reduce cognitive load by eliminating the need to
    * configure multiple settings individually.
    */

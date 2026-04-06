@@ -36,7 +36,7 @@ export default function AccessibilityPanel() {
     } = useTheme();
 
     /**
-     * WHY: Close on Escape key — WCAG 2.1.1 requires all functionality
+     * WHY: Close on Escape key - WCAG 2.1.1 requires all functionality
      * to be operable through a keyboard. Escape to dismiss is a standard
      * pattern users expect for popups/panels.
      */
@@ -53,7 +53,7 @@ export default function AccessibilityPanel() {
     }, [isOpen]);
 
     /**
-     * WHY: Close when clicking outside — standard UX pattern that also
+     * WHY: Close when clicking outside - standard UX pattern that also
      * helps motor-impaired users who may accidentally click outside.
      */
     useEffect(() => {
@@ -169,7 +169,7 @@ export default function AccessibilityPanel() {
                                 <button
                                     key={mode.id}
                                     /* WHY role="radio" + aria-checked: Each button behaves as
-                                       a radio option — screen readers announce "checked" or
+                                       a radio option - screen readers announce "checked" or
                                        "not checked" for each option. */
                                     role="radio"
                                     aria-checked={isActive}

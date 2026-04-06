@@ -1,5 +1,5 @@
 /**
- * mockResults.js — Mocked Search Result Data (Multi-Query)
+ * mockResults.js - Mocked Search Result Data (Multi-Query)
  *
  * WHY MULTI-QUERY MOCK DATA:
  * A realistic prototype should respond differently to different queries.
@@ -34,12 +34,12 @@ const resultSets = {
         results: [
             {
                 id: "greenwich-1",
-                title: "University of Greenwich — Home",
+                title: "University of Greenwich - Home",
                 url: "https://www.gre.ac.uk",
                 snippet:
                     "The University of Greenwich is a public university in London and Kent. Explore our courses, campuses, and student life across three beautiful campuses.",
                 aiContent: {
-                    heading: "University of Greenwich — Overview",
+                    heading: "University of Greenwich - Overview",
                     summary:
                         "The University of Greenwich is a public university with campuses in London and Kent. Here is what you need to know.",
                     steps: [
@@ -51,7 +51,7 @@ const resultSets = {
                         "It has about 28,000 students from over 160 countries.",
                     ],
                     importantNotes: [
-                        "Open days are held several times a year — check the website for dates.",
+                        "Open days are held several times a year - check the website for dates.",
                         "The Greenwich campus is a UNESCO World Heritage Site.",
                         "The university is in the top 40 in the UK for research quality.",
                     ],
@@ -59,7 +59,7 @@ const resultSets = {
             },
             {
                 id: "greenwich-2",
-                title: "Undergraduate Courses — University of Greenwich",
+                title: "Undergraduate Courses - University of Greenwich",
                 url: "https://www.gre.ac.uk/undergraduate-courses",
                 snippet:
                     "Browse all undergraduate degree courses at the University of Greenwich. Find entry requirements, UCAS codes, and funding information.",
@@ -72,7 +72,7 @@ const resultSets = {
                         "You can search by subject, like Computing, Business, or Nursing.",
                         "Each course page shows the entry requirements (usually UCAS points or grades).",
                         "Most courses are three years full-time, or four years with a placement year.",
-                        "You apply through UCAS — the national university application system.",
+                        "You apply through UCAS - the national university application system.",
                         "The UCAS code for the University of Greenwich is G70.",
                         "Tuition fees for UK students are £9,250 per year (2024/25).",
                     ],
@@ -85,7 +85,7 @@ const resultSets = {
             },
             {
                 id: "greenwich-3",
-                title: "Student Life at Greenwich — University of Greenwich",
+                title: "Student Life at Greenwich - University of Greenwich",
                 url: "https://www.gre.ac.uk/student-life",
                 snippet:
                     "Discover what it's like to study at Greenwich. Student accommodation, clubs and societies, support services, and campus facilities.",
@@ -99,10 +99,10 @@ const resultSets = {
                         "The Students' Union runs events, support, and social activities throughout the year.",
                         "There are libraries, computer labs, and study spaces on every campus.",
                         "Free counselling, disability support, and careers advice are available.",
-                        "Greenwich has good transport links — the campus is near Cutty Sark DLR station.",
+                        "Greenwich has good transport links - the campus is near Cutty Sark DLR station.",
                     ],
                     importantNotes: [
-                        "Apply for accommodation early — spaces fill up fast.",
+                        "Apply for accommodation early - spaces fill up fast.",
                         "The Students' Union can help if you have any problems during your course.",
                         "Greenwich is close to central London, which is great for nights out and jobs.",
                     ],
@@ -110,7 +110,7 @@ const resultSets = {
             },
             {
                 id: "greenwich-4",
-                title: "How to Apply — University of Greenwich",
+                title: "How to Apply - University of Greenwich",
                 url: "https://www.gre.ac.uk/apply",
                 snippet:
                     "Step-by-step guide on how to apply for undergraduate and postgraduate courses at the University of Greenwich through UCAS or directly.",
@@ -125,7 +125,7 @@ const resultSets = {
                         "Ask a teacher or advisor to write a reference for you.",
                         "For postgraduate courses (Masters), apply directly on the Greenwich website.",
                         "International students may need to show English language qualifications like IELTS.",
-                        "You will receive a decision by email — usually within a few weeks.",
+                        "You will receive a decision by email - usually within a few weeks.",
                     ],
                     importantNotes: [
                         "The UCAS application fee is £27.50 for one choice or £28.50 for multiple choices.",
@@ -159,7 +159,7 @@ const resultSets = {
         results: [
             {
                 id: "f1-1",
-                title: "Formula 1 — The Official Home of F1 Racing",
+                title: "Formula 1 - The Official Home of F1 Racing",
                 url: "https://www.formula1.com",
                 snippet:
                     "The official website of Formula 1. Get the latest F1 news, race results, standings, schedules, and highlights from every Grand Prix.",
@@ -172,7 +172,7 @@ const resultSets = {
                         "There are about 24 races per season, from March to December.",
                         "Ten teams compete, each with two drivers. That means 20 drivers in total.",
                         "Cars can reach speeds over 230 mph (370 km/h).",
-                        "Points are given based on finishing position — first place gets 25 points.",
+                        "Points are given based on finishing position - first place gets 25 points.",
                         "The driver with the most points at the end of the season becomes World Champion.",
                         "Famous teams include Mercedes, Red Bull, Ferrari, and McLaren.",
                     ],
@@ -185,7 +185,7 @@ const resultSets = {
             },
             {
                 id: "f1-2",
-                title: "2025 F1 Season Calendar — Race Dates and Circuits",
+                title: "2025 F1 Season Calendar - Race Dates and Circuits",
                 url: "https://www.formula1.com/en/racing/2025",
                 snippet:
                     "View the full 2025 Formula 1 race calendar with all Grand Prix dates, circuits, start times, and ticket information.",
@@ -210,12 +210,12 @@ const resultSets = {
             },
             {
                 id: "f1-3",
-                title: "F1 Driver Standings and Team Rankings — Formula1.com",
+                title: "F1 Driver Standings and Team Rankings - Formula1.com",
                 url: "https://www.formula1.com/en/results",
                 snippet:
                     "Check the current Formula 1 World Championship standings for drivers and constructors. Updated after every race.",
                 aiContent: {
-                    heading: "F1 Standings — Drivers and Teams",
+                    heading: "F1 Standings - Drivers and Teams",
                     summary:
                         "The standings show which drivers and teams are winning the championship. They update after every race.",
                     steps: [
@@ -227,7 +227,7 @@ const resultSets = {
                         "At the end of the season, the top driver and top team win the World Championship.",
                     ],
                     importantNotes: [
-                        "Standings change every race weekend — check regularly for updates.",
+                        "Standings change every race weekend - check regularly for updates.",
                         "If two drivers have the same points, the one with more wins ranks higher.",
                         "The Constructors' Championship is very important for teams' prize money.",
                     ],
@@ -235,7 +235,7 @@ const resultSets = {
             },
             {
                 id: "f1-4",
-                title: "How to Watch Formula 1 in the UK — TV and Streaming Guide",
+                title: "How to Watch Formula 1 in the UK - TV and Streaming Guide",
                 url: "https://www.skysports.com/f1",
                 snippet:
                     "Find out how to watch live Formula 1 races in the UK, including Sky Sports, Channel 4 highlights, and streaming options.",
@@ -246,7 +246,7 @@ const resultSets = {
                     steps: [
                         "Sky Sports F1 shows all races live. You need a Sky Sports subscription.",
                         "Channel 4 shows highlights of selected races for free.",
-                        "F1 TV Pro is an online streaming service — it costs about £25 per month.",
+                        "F1 TV Pro is an online streaming service - it costs about £25 per month.",
                         "Some pubs and sports bars show F1 races on big screens.",
                         "The Silverstone British Grand Prix is one race that Channel 4 usually shows live.",
                         "You can also listen to live radio commentary on BBC Radio 5 Live for free.",
@@ -283,7 +283,7 @@ const resultSets = {
         results: [
             {
                 id: "doctor-1",
-                title: "Register with a GP Surgery — NHS",
+                title: "Register with a GP Surgery - NHS",
                 url: "https://www.nhs.uk/nhs-services/gps/how-to-register-with-a-gp-surgery/",
                 snippet:
                     "How to find and register with a local GP surgery. Everyone in England can register with a GP for free.",
@@ -296,7 +296,7 @@ const resultSets = {
                         "Go to the GP surgery in person, or register online if they allow it.",
                         "Fill in a registration form called a 'GMS1' form.",
                         "You may be asked for proof of address, like a utility bill.",
-                        "You do NOT need a passport or visa to register — healthcare is for everyone.",
+                        "You do NOT need a passport or visa to register - healthcare is for everyone.",
                         "Once registered, you can book appointments by phone or online.",
                     ],
                     importantNotes: [
@@ -308,7 +308,7 @@ const resultSets = {
             },
             {
                 id: "doctor-2",
-                title: "Book a GP Appointment — NHS",
+                title: "Book a GP Appointment - NHS",
                 url: "https://www.nhs.uk/nhs-services/gps/gp-appointments-and-referrals/",
                 snippet:
                     "Find out how to book, cancel, or change a GP appointment, including online booking through the NHS App.",
@@ -317,10 +317,10 @@ const resultSets = {
                     summary:
                         "Once you are registered with a GP, you can book appointments. Here is how.",
                     steps: [
-                        "Call your GP surgery during opening hours — usually 8am to 6pm, Monday to Friday.",
+                        "Call your GP surgery during opening hours - usually 8am to 6pm, Monday to Friday.",
                         "You can also book online using the NHS App or your surgery's website.",
                         "Tell the receptionist what the appointment is about. They need this to give you the right type of appointment.",
-                        "If it is urgent, say so — they can often see you the same day.",
+                        "If it is urgent, say so - they can often see you the same day.",
                         "If you cannot make your appointment, cancel it as soon as possible.",
                         "You can also call 111 for free NHS advice 24 hours a day.",
                     ],
@@ -333,7 +333,7 @@ const resultSets = {
             },
             {
                 id: "doctor-3",
-                title: "Get Help with Prescription Costs — NHS",
+                title: "Get Help with Prescription Costs - NHS",
                 url: "https://www.nhs.uk/nhs-services/prescriptions-and-pharmacies/",
                 snippet:
                     "Find out if you're entitled to free prescriptions or how to get a prepayment certificate to save money.",
@@ -352,13 +352,13 @@ const resultSets = {
                     importantNotes: [
                         "In Scotland, Wales, and Northern Ireland, all prescriptions are free.",
                         "Ask the pharmacist if you are not sure whether you qualify for free prescriptions.",
-                        "Do not tick the 'free prescriptions' box unless you qualify — you can be fined.",
+                        "Do not tick the 'free prescriptions' box unless you qualify - you can be fined.",
                     ],
                 },
             },
             {
                 id: "doctor-4",
-                title: "NHS 111 Online — Check Your Symptoms",
+                title: "NHS 111 Online - Check Your Symptoms",
                 url: "https://111.nhs.uk/",
                 snippet:
                     "Use NHS 111 online to check your symptoms and find out what to do next. Available 24 hours a day.",
@@ -371,13 +371,13 @@ const resultSets = {
                         "Answer questions about how you are feeling.",
                         "The website will tell you what to do next.",
                         "It may tell you to see your GP, go to a pharmacy, or go to A&E.",
-                        "You can also call 111 on the phone — it is free and available 24 hours.",
+                        "You can also call 111 on the phone - it is free and available 24 hours.",
                         "Trained advisors will help you decide what to do.",
                     ],
                     importantNotes: [
                         "NHS 111 is NOT for emergencies. If someone is in danger, call 999.",
                         "You do not need to be registered with a GP to use NHS 111.",
-                        "The service is available in other languages — ask when you call.",
+                        "The service is available in other languages - ask when you call.",
                     ],
                 },
             },
@@ -410,7 +410,7 @@ const resultSets = {
         results: [
             {
                 id: "tech-1",
-                title: "What Is Artificial Intelligence (AI)? — A Simple Explanation",
+                title: "What Is Artificial Intelligence (AI)? - A Simple Explanation",
                 url: "https://www.bbc.co.uk/news/technology-ai",
                 snippet:
                     "Artificial intelligence is when computers are trained to think and learn like humans. Learn what AI is, how it works, and how it is changing the world.",
@@ -420,22 +420,22 @@ const resultSets = {
                         "AI stands for Artificial Intelligence. It means teaching computers to do things that normally need a human brain. Here is what you should know.",
                     steps: [
                         "AI is software that can learn from examples and make decisions.",
-                        "You already use AI every day — like voice assistants (Siri, Alexa) and spell check.",
+                        "You already use AI every day - like voice assistants (Siri, Alexa) and spell check.",
                         "ChatGPT is a popular AI tool that can have conversations and answer questions.",
                         "AI can help with many things: translating languages, diagnosing illnesses, and driving cars.",
-                        "AI is trained using large amounts of data — the more data it gets, the smarter it becomes.",
+                        "AI is trained using large amounts of data - the more data it gets, the smarter it becomes.",
                         "Some people worry about AI replacing jobs, but it also creates new types of work.",
                     ],
                     importantNotes: [
-                        "AI is a tool — it is not perfect and can sometimes give wrong answers.",
+                        "AI is a tool - it is not perfect and can sometimes give wrong answers.",
                         "Always double-check important information from AI tools.",
-                        "AI cannot truly 'think' like a human — it finds patterns in data.",
+                        "AI cannot truly 'think' like a human - it finds patterns in data.",
                     ],
                 },
             },
             {
                 id: "tech-2",
-                title: "Latest Technology News — BBC Technology",
+                title: "Latest Technology News - BBC Technology",
                 url: "https://www.bbc.co.uk/news/technology",
                 snippet:
                     "Get the latest technology news, reviews, and analysis from the BBC. Covers AI, social media, cybersecurity, gadgets, and the tech industry.",
@@ -452,15 +452,15 @@ const resultSets = {
                         "Most tech news sites are free to read, but some have paywalls for premium content.",
                     ],
                     importantNotes: [
-                        "Be careful of clickbait headlines — read the full article before sharing.",
+                        "Be careful of clickbait headlines - read the full article before sharing.",
                         "Look for trusted sources and fact-check surprising claims.",
-                        "Technology changes fast — news from a few months ago may already be outdated.",
+                        "Technology changes fast - news from a few months ago may already be outdated.",
                     ],
                 },
             },
             {
                 id: "tech-3",
-                title: "How to Stay Safe Online — National Cyber Security Centre",
+                title: "How to Stay Safe Online - National Cyber Security Centre",
                 url: "https://www.ncsc.gov.uk/cyberaware",
                 snippet:
                     "Essential tips from the UK's National Cyber Security Centre on how to protect yourself online, including passwords, scams, and software updates.",
@@ -470,7 +470,7 @@ const resultSets = {
                         "The internet is amazing, but there are risks. Here is how to keep yourself safe online.",
                     steps: [
                         "Use strong, unique passwords for every account. A good password has 12+ characters.",
-                        "Turn on two-factor authentication (2FA) — this adds an extra security step when you log in.",
+                        "Turn on two-factor authentication (2FA) - this adds an extra security step when you log in.",
                         "Keep your phone and computer software up to date. Updates fix security problems.",
                         "Do not click on links in emails or texts unless you are sure they are real.",
                         "If something looks too good to be true (like winning a prize), it is probably a scam.",
@@ -485,7 +485,7 @@ const resultSets = {
             },
             {
                 id: "tech-4",
-                title: "AI Tools You Can Use Today — Free and Beginner-Friendly",
+                title: "AI Tools You Can Use Today - Free and Beginner-Friendly",
                 url: "https://www.techradar.com/best/ai-tools",
                 snippet:
                     "Explore the best free AI tools available right now, including ChatGPT, Google Gemini, Microsoft Copilot, and more. No coding required.",
@@ -494,17 +494,17 @@ const resultSets = {
                     summary:
                         "There are many AI tools you can use for free. You do not need to know how to code. Here are some of the best ones.",
                     steps: [
-                        "ChatGPT (chat.openai.com) — talk to an AI that can answer questions, write text, and help you learn.",
-                        "Google Gemini (gemini.google.com) — Google's AI that can search the web and create images.",
-                        "Microsoft Copilot (copilot.microsoft.com) — a free AI assistant built into Microsoft products.",
-                        "Canva AI (canva.com) — helps you design images, presentations, and social media posts.",
-                        "Grammarly (grammarly.com) — an AI that checks your writing for spelling and grammar mistakes.",
+                        "ChatGPT (chat.openai.com) - talk to an AI that can answer questions, write text, and help you learn.",
+                        "Google Gemini (gemini.google.com) - Google's AI that can search the web and create images.",
+                        "Microsoft Copilot (copilot.microsoft.com) - a free AI assistant built into Microsoft products.",
+                        "Canva AI (canva.com) - helps you design images, presentations, and social media posts.",
+                        "Grammarly (grammarly.com) - an AI that checks your writing for spelling and grammar mistakes.",
                         "Most of these tools have a free version. You can pay for extra features if you want.",
                     ],
                     importantNotes: [
                         "Do not share personal or sensitive information with AI chatbots.",
-                        "AI tools can make mistakes — always check their answers.",
-                        "Some AI tools store your conversations — check their privacy policy.",
+                        "AI tools can make mistakes - always check their answers.",
+                        "Some AI tools store your conversations - check their privacy policy.",
                     ],
                 },
             },
@@ -513,14 +513,14 @@ const resultSets = {
 };
 
 /**
- * findResultsForQuery — Keyword-matching function
+ * findResultsForQuery - Keyword-matching function
  *
  * WHY: For a realistic prototype, we match the user's query against
- * keywords in each result set. This gives the demo a natural feel —
+ * keywords in each result set. This gives the demo a natural feel -
  * different queries return different results. If no keyword matches,
  * we return null so the UI can show a helpful fallback message.
  *
- * @param {string} query — the user's search query
+ * @param {string} query - the user's search query
  * @returns {{ label: string, results: Array } | null}
  */
 export function findResultsForQuery(query) {

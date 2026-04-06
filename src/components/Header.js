@@ -5,7 +5,7 @@
  *
  * WHY: The header provides consistent navigation across all pages.
  * It uses semantic <header> and <nav> elements so screen readers can
- * identify the navigation landmark (WCAG 1.3.1 — Info and Relationships).
+ * identify the navigation landmark (WCAG 1.3.1 - Info and Relationships).
  *
  * The logo links back to the homepage, and the Accessibility Panel
  * is always visible in the top right for easy access.
@@ -38,7 +38,7 @@ export default function Header() {
                 {/* Logo / Home Link */}
                 <Link
                     href="/"
-                    aria-label="OmniSearch AI — Return to homepage"
+                    aria-label="OmniSearch AI - Return to homepage"
                     className="flex items-center gap-2 text-xl font-bold no-underline transition-colors"
                     style={{ color: "var(--text-primary)" }}
                 >

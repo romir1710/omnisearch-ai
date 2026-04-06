@@ -1,23 +1,23 @@
 "use client";
 
 /**
- * AIAccessView Component — The Hackathon "Wow" Factor
+ * AIAccessView Component - The Hackathon "Wow" Factor
  *
  * WHY: This is the core value proposition of OmniSearch AI. Many websites
- * are inaccessible — poor contrast, missing alt text, confusing navigation.
+ * are inaccessible - poor contrast, missing alt text, confusing navigation.
  * Instead of forcing users to struggle with those sites, we simulate an LLM
  * extracting and simplifying the content into a perfectly accessible overlay.
  *
  * ACCESSIBILITY FEATURES:
- * 1. Focus Trap — keyboard focus stays within the modal (WCAG 2.4.3)
- * 2. role="dialog" + aria-modal="true" — announces as modal to screen readers
- * 3. aria-labelledby — associates the modal with its heading
- * 4. Escape key closes — standard keyboard pattern (WCAG 2.1.1)
- * 5. Return focus to trigger — when closed, focus returns to the button
+ * 1. Focus Trap - keyboard focus stays within the modal (WCAG 2.4.3)
+ * 2. role="dialog" + aria-modal="true" - announces as modal to screen readers
+ * 3. aria-labelledby - associates the modal with its heading
+ * 4. Escape key closes - standard keyboard pattern (WCAG 2.1.1)
+ * 5. Return focus to trigger - when closed, focus returns to the button
  *    that opened the modal (WCAG 2.4.3 Focus Order)
- * 6. Built-in TTS — uses Web Speech API for audio output
- * 7. Dyslexia font toggle — scoped to this view for targeted accommodation
- * 8. Dynamic text sizing — goes beyond the global setting for this content
+ * 6. Built-in TTS - uses Web Speech API for audio output
+ * 7. Dyslexia font toggle - scoped to this view for targeted accommodation
+ * 8. Dynamic text sizing - goes beyond the global setting for this content
  */
 
 import { useState, useEffect, useRef, useCallback } from "react";
@@ -38,7 +38,7 @@ export default function AIAccessView({ result, onClose, triggerRef }) {
      * Focus trap + Escape key handler
      * WHY: WCAG 2.4.3 requires that focus does not leave a modal dialog
      * until the user explicitly closes it. Without a focus trap, Tab key
-     * would move focus to elements behind the overlay — confusing for both
+     * would move focus to elements behind the overlay - confusing for both
      * screen reader and keyboard users.
      */
     useEffect(() => {
@@ -52,7 +52,7 @@ export default function AIAccessView({ result, onClose, triggerRef }) {
                 return;
             }
 
-            // Focus trap — keep Tab cycling within the modal
+            // Focus trap - keep Tab cycling within the modal
             if (e.key === "Tab") {
                 const focusableElements = modalRef.current?.querySelectorAll(
                     'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
@@ -64,13 +64,13 @@ export default function AIAccessView({ result, onClose, triggerRef }) {
                 const lastElement = focusableElements[focusableElements.length - 1];
 
                 if (e.shiftKey) {
-                    // Shift+Tab — wrap to last element
+                    // Shift+Tab - wrap to last element
                     if (document.activeElement === firstElement) {
                         e.preventDefault();
                         lastElement.focus();
                     }
                 } else {
-                    // Tab — wrap to first element
+                    // Tab - wrap to first element
                     if (document.activeElement === lastElement) {
                         e.preventDefault();
                         firstElement.focus();
@@ -91,7 +91,7 @@ export default function AIAccessView({ result, onClose, triggerRef }) {
     }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
     /**
-     * Close handler — returns focus to the trigger element.
+     * Close handler - returns focus to the trigger element.
      * WHY: WCAG 2.4.3 requires that when a dialog closes, focus returns
      * to the element that opened it. This prevents users from getting
      * "lost" on the page after closing a modal.
@@ -167,7 +167,7 @@ export default function AIAccessView({ result, onClose, triggerRef }) {
             className="fixed inset-0 z-50 flex flex-col bg-white/95 backdrop-blur-md"
         >
             {/* ----------------------------------------------------------------
-          Toolbar — Controls for TTS, font, and text size
+          Toolbar - Controls for TTS, font, and text size
           WHY: Placed at the top so users discover these controls immediately.
           Each button has clear aria-labels and icons for recognition.
           ---------------------------------------------------------------- */}
@@ -270,7 +270,7 @@ export default function AIAccessView({ result, onClose, triggerRef }) {
             </div>
 
             {/* ----------------------------------------------------------------
-          Content Area — Simplified, accessible version of the website
+          Content Area - Simplified, accessible version of the website
           WHY: This is the "AI Access View" content. It's rendered in
           semantic HTML with clear hierarchy (h2 for heading, ol for
           ordered steps, ul for notes). The content is written at B1
@@ -342,7 +342,7 @@ export default function AIAccessView({ result, onClose, triggerRef }) {
                         >
                             Steps to Follow
                         </h3>
-                        {/* WHY <ol>: These are sequential steps — an ordered list
+                        {/* WHY <ol>: These are sequential steps - an ordered list
                 communicates that the order matters. Screen readers will
                 announce "1 of 7", "2 of 7", etc. */}
                         <ol className="space-y-3 mb-8 list-none">
@@ -382,7 +382,7 @@ export default function AIAccessView({ result, onClose, triggerRef }) {
                         >
                             Important Things to Know
                         </h3>
-                        {/* WHY <ul>: These notes are unordered — they don't need to
+                        {/* WHY <ul>: These notes are unordered - they don't need to
                 be read in sequence. Screen readers announce "bullet". */}
                         <ul className="space-y-2 mb-8">
                             {result.aiContent.importantNotes.map((note, index) => (

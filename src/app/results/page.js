@@ -1,7 +1,7 @@
 "use client";
 
 /**
- * SearchResults Page — /results?q=...
+ * SearchResults Page - /results?q=...
  *
  * WHY: This page displays search results that are contextual to the query.
  * Results are matched via keyword matching against our mock data sets.
@@ -37,7 +37,7 @@ function SearchResultsContent() {
     /**
      * WHY useRef for each trigger button: When the AI Access View modal
      * closes, we need to return focus to the exact button that opened it.
-     * This is WCAG 2.4.3 — Focus Order. We store a ref for each result's
+     * This is WCAG 2.4.3 - Focus Order. We store a ref for each result's
      * "Open in AI Access View" button.
      */
     const triggerRefs = useRef({});
@@ -97,7 +97,7 @@ function SearchResultsContent() {
                                         {" "}in <strong style={{ color: "var(--accent-primary)" }}>{matchedSet.label}</strong>
                                     </span>
                                 )}
-                                {" "}— each includes an{" "}
+                                {" "}- each includes an{" "}
                                 <strong style={{ color: "var(--accent-primary)" }}>
                                     AI Access View
                                 </strong>{" "}
@@ -117,7 +117,7 @@ function SearchResultsContent() {
               No Results State
               WHY: Rather than showing an empty page, we guide users to our
               demo queries. This improves the hackathon demo experience and
-              is also good UX — always give users a way forward.
+              is also good UX - always give users a way forward.
               --------------------------------------------------------------- */}
                     {results.length === 0 && (
                         <section
@@ -126,7 +126,7 @@ function SearchResultsContent() {
                                 backgroundColor: "var(--bg-secondary)",
                                 border: "2px solid var(--border-color)",
                             }}
-                            aria-label="No results found — try a suggested search"
+                            aria-label="No results found - try a suggested search"
                         >
                             <div
                                 className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
@@ -181,7 +181,7 @@ function SearchResultsContent() {
 
                     {/* Results List */}
                     {results.length > 0 && (
-                        /* WHY <ol>: Search results are ranked by relevance — an ordered
+                        /* WHY <ol>: Search results are ranked by relevance - an ordered
                            list communicates this hierarchy. Screen readers announce
                            "list, N items" and "1 of N", "2 of N", etc. */
                         <ol
@@ -221,7 +221,7 @@ function SearchResultsContent() {
                                             {result.url}
                                         </p>
 
-                                        {/* Title — styled as a link to the original site */}
+                                        {/* Title - styled as a link to the original site */}
                                         <h2
                                             id={`result-title-${result.id}`}
                                             className="text-xl font-bold mb-2"
@@ -232,7 +232,7 @@ function SearchResultsContent() {
                                                 rel="noopener noreferrer"
                                                 className="no-underline hover-underline-animated"
                                                 style={{ color: "var(--accent-primary)" }}
-                                                aria-label={`${result.title} — opens in a new tab`}
+                                                aria-label={`${result.title} - opens in a new tab`}
                                             >
                                                 {result.title}
                                             </a>
@@ -264,7 +264,7 @@ function SearchResultsContent() {
                                                 href={result.url}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                aria-label={`Visit original site: ${result.title} — opens in a new tab`}
+                                                aria-label={`Visit original site: ${result.title} - opens in a new tab`}
                                                 className="flex items-center gap-2 px-5 py-3 rounded-lg font-semibold text-sm no-underline transition-all duration-200 hover:bg-gray-100 active:scale-95"
                                                 style={{
                                                     backgroundColor: "transparent",
@@ -282,7 +282,7 @@ function SearchResultsContent() {
                         </ol>
                     )}
 
-                    {/* Suggested Queries — also shown below results for discovery */}
+                    {/* Suggested Queries - also shown below results for discovery */}
                     {results.length > 0 && (
                         <section
                             className="mt-10 pt-8"

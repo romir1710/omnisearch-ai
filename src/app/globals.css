@@ -1,5 +1,5 @@
 /* ==========================================================================
-   OmniSearch AI — Global Stylesheet
+   OmniSearch AI - Global Stylesheet
    
    WHY: We use CSS custom properties (variables) to define our accessible
    color palette. This allows our ThemeProvider to swap palettes dynamically
@@ -24,7 +24,7 @@
 }
 
 /* --------------------------------------------------------------------------
-   CSS Custom Properties — Default (Light) Theme
+   CSS Custom Properties - Default (Light) Theme
    WHY: Using variables allows dynamic theme switching without re-rendering.
    All foreground/background combos exceed 7:1 contrast ratio.
    -------------------------------------------------------------------------- */
@@ -35,13 +35,13 @@
   --bg-card: #ffffff;
   --bg-overlay: rgba(0, 0, 0, 0.75);
 
-  /* Text colors — all exceed 7:1 on their paired backgrounds */
+  /* Text colors - all exceed 7:1 on their paired backgrounds */
   --text-primary: #1a1a1a; /* 15.4:1 on white */
   --text-secondary: #3d3d3d; /* 10.3:1 on white */
   --text-muted: #525252; /* 7.4:1 on white */
 
   /* Interactive colors */
-  --accent-primary: #1a56db; /* 7.2:1 on white — links, primary buttons */
+  --accent-primary: #1a56db; /* 7.2:1 on white - links, primary buttons */
   --accent-hover: #1042a3;
   --accent-focus: #1a56db;
   --accent-success: #15803d;
@@ -58,15 +58,15 @@
   --font-primary: var(--font-jakarta, "Plus Jakarta Sans"), system-ui, -apple-system, sans-serif;
   --font-dyslexia: "OpenDyslexic", "Comic Sans MS", sans-serif;
 
-  /* Base font size — minimum 18px per our accessibility spec */
+  /* Base font size - minimum 18px per our accessibility spec */
   --font-size-base: 1.125rem; /* 18px */
-  --font-size-large: 1.375rem; /* 22px — "Large Text" mode */
+  --font-size-large: 1.375rem; /* 22px - "Large Text" mode */
 }
 
 /* --------------------------------------------------------------------------
    High Contrast Theme Override
    WHY: Some users with low vision need maximum contrast. Pure black (#000)
-   on pure white (#fff) gives 21:1 contrast ratio — the absolute maximum.
+   on pure white (#fff) gives 21:1 contrast ratio - the absolute maximum.
    -------------------------------------------------------------------------- */
 body.high-contrast {
   --bg-primary: #000000;
@@ -94,11 +94,11 @@ body.high-contrast {
 }
 
 html {
-  font-size: 100%; /* 16px browser default — we scale up with rem */
+  font-size: 100%; /* 16px browser default - we scale up with rem */
   scroll-behavior: smooth;
 }
 
-/* WHY: prefers-reduced-motion — WCAG 2.3.3 requires respecting user's
+/* WHY: prefers-reduced-motion - WCAG 2.3.3 requires respecting user's
    system setting to disable animations, which can trigger vestibular
    disorders or seizures. */
 @media (prefers-reduced-motion: reduce) {
@@ -122,7 +122,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* WHY: Dyslexia font class — toggled by ThemeProvider. Applied to body
+/* WHY: Dyslexia font class - toggled by ThemeProvider. Applied to body
    so ALL text on the page uses the dyslexia-friendly typeface. */
 body.dyslexia-font {
   font-family: var(--font-dyslexia);
@@ -150,7 +150,7 @@ body.large-text {
    Utility Classes
    -------------------------------------------------------------------------- */
 
-/* Screen-reader-only text — visually hidden but announced by screen readers.
+/* Screen-reader-only text - visually hidden but announced by screen readers.
    WHY: Used for skip links, labels, and other a11y-only content. */
 .sr-only {
   position: absolute;
@@ -164,7 +164,7 @@ body.large-text {
   border-width: 0;
 }
 
-/* Skip link — becomes visible when focused via keyboard.
+/* Skip link - becomes visible when focused via keyboard.
    WHY: WCAG 2.4.1 requires a mechanism to bypass repeated navigation.
    This link jumps users directly to <main id="main-content">. */
 .skip-link {
@@ -188,7 +188,7 @@ body.large-text {
 }
 
 /* --------------------------------------------------------------------------
-   Premium UI Enhancements (Visual Only — No functionality changes)
+   Premium UI Enhancements (Visual Only - No functionality changes)
    -------------------------------------------------------------------------- */
 
 /* Subtly animated aurora background */

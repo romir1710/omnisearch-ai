@@ -1,7 +1,7 @@
 "use client";
 
 /**
- * SearchHome — The Minimalist Search Homepage
+ * SearchHome - The Minimalist Search Homepage
  *
  * WHY THE DESIGN:
  * Inspired by Google's homepage: centered layout, single search input,
@@ -133,7 +133,7 @@ export default function SearchHome() {
                 /* WHY aria-label: Provides a more descriptive label than the
                    visible label text. Screen readers will use this instead
                    of the <label> text when both are present. */
-                aria-label="Search query — type your question and press Enter or click Search"
+                aria-label="Search query - type your question and press Enter or click Search"
                 /* WHY autocomplete="off": Prevents browser autocomplete from
                    overlapping with our UI. In production, we'd use a custom
                    suggestions dropdown with proper ARIA roles. */
@@ -172,7 +172,7 @@ export default function SearchHome() {
                context after the label. */
             id="search-helper"
           >
-            Try searching for anything — we&apos;ll make the results accessible for you.
+            Try searching for anything - we&apos;ll make the results accessible for you.
           </p>
         </motion.form>
 
@@ -196,7 +196,7 @@ export default function SearchHome() {
             {
               icon: Ear,
               title: "Multi-Modal",
-              desc: "Read, listen, or customize — your content, your way.",
+              desc: "Read, listen, or customize - your content, your way.",
             },
           ].map((feature, index) => {
             const IconComponent = feature.icon;

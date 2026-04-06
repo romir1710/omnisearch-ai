@@ -1,13 +1,13 @@
 /**
- * Root Layout — src/app/layout.js
+ * Root Layout - src/app/layout.js
  *
  * WHY: The root layout wraps every page in the application. It provides:
- * 1. <html lang="en"> — WCAG 3.1.1 requires declaring the page language
+ * 1. <html lang="en"> - WCAG 3.1.1 requires declaring the page language
  *    so screen readers use the correct pronunciation engine
- * 2. Google Fonts (Inter) — loaded with `display: swap` to prevent FOIT
- * 3. ThemeProvider — makes accessibility state available to all components
- * 4. SkipLink — WCAG 2.4.1 bypass mechanism, first element in DOM
- * 5. Header — consistent navigation across all pages
+ * 2. Google Fonts (Inter) - loaded with `display: swap` to prevent FOIT
+ * 3. ThemeProvider - makes accessibility state available to all components
+ * 4. SkipLink - WCAG 2.4.1 bypass mechanism, first element in DOM
+ * 5. Header - consistent navigation across all pages
  */
 
 import { Plus_Jakarta_Sans } from "next/font/google";
@@ -33,14 +33,14 @@ const jakarta = Plus_Jakarta_Sans({
  * accessibility mission upfront.
  */
 export const metadata = {
-  title: "OmniSearch AI — Accessible Search for Everyone",
+  title: "OmniSearch AI - Accessible Search for Everyone",
   description:
     "A search engine designed for users with cognitive and visual disabilities. Features AI Access View to simplify and render accessible content from any website.",
 };
 
 export default function RootLayout({ children }) {
   return (
-    /* WHY lang="en": WCAG 3.1.1 — Language of Page. Screen readers
+    /* WHY lang="en": WCAG 3.1.1 - Language of Page. Screen readers
        use this attribute to select the correct speech synthesis voice.
        Without it, a screen reader might mispronounce English text. */
     <html lang="en" className={jakarta.variable}>
@@ -55,7 +55,7 @@ export default function RootLayout({ children }) {
           {/* Persistent Header with Accessibility Panel */}
           <Header />
 
-          {/* Page Content — id="main-content" is the skip link target */}
+          {/* Page Content - id="main-content" is the skip link target */}
           {children}
         </ThemeProvider>
       </body>
