@@ -11,6 +11,8 @@
 
 ## ✨ Overview
 
+Access here: https://omnisearch-ai.vercel.app/
+
 OmniSearch AI is a search engine prototype that puts **accessibility first**. Every element - from the search bar to the results page - is designed to be usable by everyone, including users with visual, motor, cognitive, and auditory disabilities.
 
 The standout feature is **AI Access View**: a tool that transforms complex web pages into clean, readable formats with adjustable text, dyslexia-friendly fonts, and simplified layouts.
